@@ -8,7 +8,7 @@ This project contains source code and supporting files for a serverless applicat
 
 The application uses several AWS resources, including Lambda functions, RDS, EventBridge CloudWatch. These resources are defined in the `template.yaml` file.
 
-![Quick Overview of Diagram](EventDrivenPython.png)
+-> ![Quick Overview of Diagram](EventDrivenPython.png) <-
 
 ## Deploy the sample application
 
