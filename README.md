@@ -7,8 +7,9 @@ This project contains source code and supporting files for a serverless applicat
 - template.yaml - A template that defines the application's AWS resources.
 
 The application uses several AWS resources, including Lambda functions, RDS, EventBridge CloudWatch. These resources are defined in the `template.yaml` file.
-
-<img align="center" src="EventDrivenPython.png">
+<p  align="center">
+<img src="EventDrivenPython.png">
+</p>
 
 ## Deploy the sample application
 
