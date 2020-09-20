@@ -1,0 +1,37 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  cgc-app
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 3
+
+Resources:
+
+
+  dataDownloadFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: dataDownload/
+      Handler: app.lambda_handler
+      Runtime: python3.7
+      Events:
+        dataDownload:
+          Type: Schedule
+          Properties:
+            Schedule: 'rate(1 day)'
+            Description: daily schedule
+            Enabled: True
+    
+  
+  PostgreSQL:
+    Type: AWS::RDS::DBInstance
+    Properties: 
+      DBName : CovidDB
+      Engine: postgres
+      AllocatedStorage: 50
+      DBInstanceClass: db.t2.micro
+      MasterUsername: radhuda
+      MasterUserPassword: postrad1234
