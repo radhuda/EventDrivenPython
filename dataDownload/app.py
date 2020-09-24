@@ -10,6 +10,7 @@ nytimes_link = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/u
 john_hopkins_link = 'https://raw.githubusercontent.com/datasets/covid-19/master/data/time-series-19-covid-combined.csv?opt_id=oeu1597324410905r0.13823075358019055'
 
 
+
 # DB params are stored in a hidden file called dbparams.json
 with open("dbparams.json","r") as f:
     db_param = json.load(f)
