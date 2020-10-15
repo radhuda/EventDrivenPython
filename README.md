@@ -25,7 +25,7 @@ Since gaining my Cloud Practitioner Cert in early September I really wanted to d
 * 7. [ERROR-HANDLING](README.md#ERROR-HANDLING)
 * 8. [TESTS](README.md#TESTS)
 * 9. [DASHBOARD](README.md#DASHBOARD)
-* 10. [BLOG-POST] (https://dev.to/radhuda/event-driven-python-on-aws-1e41)
+* 10. [BLOG-POST](https://dev.to/radhuda/event-driven-python-on-aws-1e41)
 
 # Diagram of my Approach
 <p  align="center">
